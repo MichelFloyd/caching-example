@@ -203,7 +203,7 @@ const server = new apollo_server__WEBPACK_IMPORTED_MODULE_0__.ApolloServer({
   plugins: [
     (0,apollo_server_core__WEBPACK_IMPORTED_MODULE_1__.ApolloServerPluginCacheControl)({
       // Cache everything for 1 second by default.
-      defaultMaxAge: 1000,
+      defaultMaxAge: 10000,
       // Don't send the `cache-control` response header.
       calculateHttpHeaders: false,
     }),
