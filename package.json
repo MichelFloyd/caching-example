@@ -1,0 +1,24 @@
+{
+  "name": "caching-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "build:watch": "webpack --watch",
+    "start": "npm run build && node dist/server.js",
+    "start:watch": "concurrently \"npm run build:watch\" \"nodemon dist/server.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michel Floyd",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^3.8.1",
+    "concurrently": "^7.2.1",
+    "graphql": "^16.5.0",
+    "graphql-scalars": "^1.17.0",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
